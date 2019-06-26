@@ -1,0 +1,13 @@
+<h2> All the registered users</h2>
+<table>
+<tr><th>username</th>
+<th>email</th>
+<th>password</th>
+
+</tr>
+{% for a in all %}
+<tr><td> {{a.username}}</td>
+<td>{{a.email}}</td>
+<td>{{a.password}}</td></tr>
+{% endfor %}
+</table>

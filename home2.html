@@ -1,0 +1,13 @@
+<h2> Available videos to watch</h2>
+<table>
+<tr><th>title</th>
+<th>description</th>
+<th>duration</th>
+
+</tr>
+{% for a in all %}
+<tr><td> {{a.title}}</td>
+<td>{{a.description}}</td>
+<td>{{a.duration}}</td></tr>
+{% endfor %}
+</table>
